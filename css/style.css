@@ -35,6 +35,10 @@ a {
     background-color: #0F172B !important;
 }
 
+.form-control {
+    border-radius: 2px;
+}
+
 .btn {
     font-weight: 500;
     text-transform: uppercase;
@@ -48,9 +52,19 @@ a {
     border-color: #FEA116;
 }
 
+.btn-primary:hover {
+    background-color: #FEAF39;
+    border-color: #FEAF39;
+}
+
 .btn-secondary {
     background-color: #0F172B;
     border-color: #0F172B;
+}
+
+.btn-secondary:hover {
+    background-color: #0D1425;
+    border-color: #0D1425;
 }
 
 .section-title {
@@ -86,3 +100,79 @@ a {
 }
 
 /* ------------------------- Header ------------------------- */
+header .navbar-brand {
+    height: 74px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+    padding: 25px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.navbar-nav .nav-link.show {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .nav-item .nav-link i {
+    font-size: 14px;
+    transition: .4s;
+}
+
+.navbar .nav-item .nav-link[aria-expanded=true] i,
+.navbar .nav-item .nav-link:hover i {
+    transform: rotate(-180deg);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 var(--primary);
+}
+
+.navbar-toggler[aria-expanded=true] {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        border-top: 1px solid #fea11638;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-collapse form {
+        margin: 0 8px 8px 8px;
+        padding: 0 !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        transform: rotateX(90deg);
+        transform-origin: top;
+        opacity: 0;
+        visibility: hidden;
+        transition: .4s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: .4s;
+        opacity: 1;
+    }
+}
