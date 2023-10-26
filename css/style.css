@@ -35,6 +35,14 @@ a {
     background-color: #0F172B !important;
 }
 
+.border-primary {
+    border-color: #FEA116 !important;
+}
+
+.border-dark {
+    border-color: #0F172B !important;
+}
+
 .form-control {
     border-radius: 2px;
 }
@@ -104,6 +112,16 @@ header .navbar-brand {
     height: 74px;
 }
 
+header .navbar-brand::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    vertical-align: middle;
+    width: 1px;
+    height: 50px;
+    background-color: #FEA116;
+}
+
 .navbar-nav .nav-link {
     color: white;
     margin-right: 20px;
@@ -147,6 +165,10 @@ header .navbar-brand {
         border-top: 1px solid #fea11638;
     }
 
+    header .navbar-brand::after {
+        display: none;
+    }
+
     .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
@@ -175,4 +197,55 @@ header .navbar-brand {
         transition: .4s;
         opacity: 1;
     }
+}
+
+/* ------------------------- Carousel ------------------------- */
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 43, .7);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.new-btn,
+.new-btn:hover {
+    color: var(--dark);
+    background-color: #F1F8FF;
+    border-color: #F1F8FF;
+}
+
+/* ------------------------- Last-Minute Deals ------------------------- */
+
+.booking {
+    position: relative;
+    margin-top: -100px !important;
+    z-index: 1;
 }

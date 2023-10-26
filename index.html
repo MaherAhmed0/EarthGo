@@ -25,7 +25,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-dark shadow stiky-top p-0">
                 <a href="index.html"
-                    class="navbar-brand d-flex align-items-center text-primary text-center py-0 px-4 px-lg-5">
+                    class="navbar-brand d-flex align-items-center text-primary text-center py-0 px-4 px-lg-5 position-relative">
                     <h1 class="m-0">EarthGo</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-4 collapsed" data-bs-toggle="collapse"
@@ -52,11 +52,132 @@
                     <form class="d-flex pe-3">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-primary mx-2" type="submit">Search</button>
-                        <button class="btn btn-primary" type="submit">Login</button>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Login</button>
                     </form>
                 </div>
             </nav>
         </header>
+        <!-- --------------------------------------- Modal --------------------------------------- -->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h1 class="modal-title text-primary fs-4" id="exampleModalLabel">Login</h1>
+                        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="m-3">
+                                <label class="form-label text-dark">Email address</label>
+                                <input type="email" class="form-control text-dark border-dark rounded-2"
+                                    aria-describedby="emailHelp">
+                                <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+                            </div>
+                            <div class="m-3">
+                                <label class="form-label text-dark">Password</label>
+                                <input type="password" class="form-control text-dark border-dark rounded-2">
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" checked>
+                                    <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remmember
+                                        me</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------------------------------- Carousel --------------------------------------- -->
+        <main class="container-fluid p-0 mb-5">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="images/carousel-1.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h6 class="section-title text-white text-uppercase mb-3">Explore the World</h6>
+                                <h2 class="display-3 fw-bold text-white mb-4">Discover Your Dream Destinations</h2>
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Our Tours</a>
+                                <a href="#" class="btn new-btn py-md-3 px-md-5">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/carousel-2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h6 class="section-title text-white text-uppercase mb-3">Explore the World</h6>
+                                <h2 class="display-3 fw-bold text-white mb-4">Discover Your Dream Destinations</h2>
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Our Tours</a>
+                                <a href="#" class="btn new-btn py-md-3 px-md-5">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </main>
+        <!-- --------------------------------------- Last-Minute Deals --------------------------------------- -->
+        <section class="container-fluid booking pb-5">
+            <div class="container">
+                <div class="bg-white shadow" style="padding: 30px;">
+                    <h4 class="">Last-Minute <span class="text-primary text-uppercase">Deals</span></h4>
+                    <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="row g-2">
+                                <div class="col-md-3">
+                                    <div class="date">
+                                        <input type="text" class="form-control" placeholder="Check-in" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="date">
+                                        <input type="text" class="form-control" placeholder="Check-out" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select form-control">
+                                        <option selected>Adults</option>
+                                        <option value="1">1 Adult</option>
+                                        <option value="2">2 Adults</option>
+                                        <option value="3">3 Adults</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select form-control">
+                                        <option selected>Children</option>
+                                        <option value="1">1 Child</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </div> <!-- container-xxl -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
