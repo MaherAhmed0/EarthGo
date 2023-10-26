@@ -22,8 +22,8 @@
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- --------------------------------------- Header --------------------------------------- -->
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark shadow stiky-top p-0">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-dark shadow p-0">
                 <a href="index.html"
                     class="navbar-brand d-flex align-items-center text-primary text-center py-0 px-4 px-lg-5 position-relative">
                     <h1 class="m-0">EarthGo</h1>
@@ -81,7 +81,7 @@
                             </div>
                             <div class="form-check">
                                 <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" checked>
+                                    <input class="form-check-input" type="checkbox" role="switch" unchecked>
                                     <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remmember
                                         me</label>
                                 </div>
@@ -177,7 +177,66 @@
                 </div>
             </div>
         </section>
-        
+        <!-- --------------------------------------- About Us --------------------------------------- -->
+        <section class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
+                        <h2 class="mb-4 display-5 fw-bold">Welcome to <span class="text-primary">EarthGo</span></h2>
+                        <p class="mb-4">Welcome to EarthGo, your passport to extraordinary adventures and unforgettable
+                            journeys. At EarthGo, we're dedicated to curating immersive travel experiences that cater to
+                            the wanderlust in your soul.</p>
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1">274</h2>
+                                        <p class="mb-0">Tours</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1">434</h2>
+                                        <p class="mb-0">Staffs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1">17061</h2>
+                                        <p class="mb-0">Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="#">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-75" src="images/welcome-3.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-100" src="images/welcome-2.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-50" src="images/welcome-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-75" src="images/welcome-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div> <!-- container-xxl -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
