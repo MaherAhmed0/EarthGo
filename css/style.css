@@ -250,18 +250,6 @@ header .navbar-brand::after {
     z-index: 1;
 }
 
-/* .item {
-    width: 600px;
-    height: 400px;
-}
-
-.part {
-    width: 200px;
-    height: 400px;
-    transform-origin: bottom left;
-    transform: skewX(-10deg);
-} */
-
 /* ------------------------- Services ------------------------- */
 .service-item {
     height: 320px;
@@ -296,6 +284,76 @@ header .navbar-brand::after {
 .service-item:hover h5,
 .service-item:hover p {
     color: #FFFFFF !important;
+}
+
+/* ------------------------- Cultural Experiences ------------------------- */
+.text-content {
+    padding: 35px;
+}
+.experience-item img {
+    transition: .4s;
+}
+
+.image-content-r::after {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    transform: skewX(7deg);
+    background: var(--dark);
+}
+
+.image-content-l::after {
+    content: "";
+    position: absolute;
+    right: -42px;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    transform: skewX(-7deg);
+    background: var(--dark);
+}
+
+@media (max-width: 992px) {
+    .experience-item {
+        display: flex;
+    }
+
+    .image-content-r::after,
+    .image-content-l::after {
+        display: none;
+    }
+
+    .image-content-r,
+    .image-content-l {
+        order: -1;
+        transform-origin: center;
+        transform: translateX(0) skewX(0deg);
+    }
+}
+
+.loc::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    height: 4px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+.experience-item:hover .loc::after {
+    width: 150px;
+}
+
+.experience-item:hover .image-content-l img,
+.experience-item:hover .image-content-r img {
+    transform: scale(1.15);
 }
 
 /* ------------------------- FAQs ------------------------- */
