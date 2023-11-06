@@ -777,6 +777,239 @@
                 </div>
             </div>
         </section>
+        <!-- --------------------------------------- Translation --------------------------------------- -->
+        <section class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h6 class="section-title text-start text-primary text-uppercase">Translation Service</h6>
+                        <h2 class="mb-4 display-5 fw-bold">Try Our <span class="text-primary">Translator</span></h2>
+                        <p class="mb-4">Welcome to our Translation Assistance section, where language is no longer a
+                            hurdle on your travel journey. We understand that sometimes you need help with specific
+                            words or phrases to enhance your travel experience. Our Translation Assistance is here to
+                            make sure you're understood, whether you're asking for directions, ordering a meal, or
+                            connecting with locals.</p>
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center py-3 px-1">
+                                        <i class="fa fa-language fa-2x text-primary mb-2"></i>
+                                        <h4 class="mb-1">Translate</h4>
+                                        <p class="mb-0">Words</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center py-3 px-1">
+                                        <i class="fa fa-comments fa-2x text-primary mb-2"></i>
+                                        <h4 class="mb-1">Converse</h4>
+                                        <p class="mb-0">With Locals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center py-3 px-1">
+                                        <i class="fa fa-book fa-2x text-primary mb-2"></i>
+                                        <h4 class="mb-1">Learn</h4>
+                                        <p class="mb-0">New Phrases</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide col-lg-6">
+                        <div class="carousel-inner carousel-content mt-3">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="card text-center mb-4">
+                                    <div class="card-header bg-dark text-white">
+                                        Arabic <i class="fa-solid fa-arrow-right-long mx-2"
+                                            style="vertical-align: middle;"></i> English
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="textToCopy"
+                                                style="height: 100px"></textarea>
+                                            <label for="textToCopy">Translate</label>
+                                        </div>
+                                        <div class="row g-1 justify-content-between mt-2">
+                                            <button type="button" onclick="copyTextToClipboard()"
+                                                class="btn btn-primary rounded col-lg-auto col-sm-12"
+                                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Copy to Clipboard">Copy</button>
+                                            <a href="https://www.google.com/search?q=%D8%AA%D8%B1%D8%AC%D9%85%D9%87&oq=%D8%AA&aqs=chrome.1.69i57j0i3l2j46i131i199i433i465i512j0i433i512j69i61l3.2816j0j7&sourceid=chrome&ie=UTF-8"
+                                                class="btn btn-dark rounded col-lg-auto col-sm-12" target="_blank">Use
+                                                google translation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="card-body position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="form-floating col-lg-5 col-sm-12">
+                                                <textarea class="form-control" id="textToCopy"
+                                                    style="height: 100px"></textarea>
+                                                <label class="ms-2" for="textToCopy">Enter Text</label>
+                                            </div>
+                                            <div
+                                                class="fa-solid fa-arrow-right-arrow-left text-secondary col-lg-2 py-2">
+                                            </div>
+                                            <div class="form-floating col-lg-5 col-sm-12">
+                                                <textarea class="form-control" id="textToCopy"
+                                                    style="height: 100px"></textarea>
+                                                <label class="ms-2" for="textToCopy">Translation</label>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute top-50 start-50 translate-middle z-3 text-dark">
+                                            <h5>Coming Soon</h5>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 start-0 bottom-0 end-0 z-2 bg-secondary bg-opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="card text-center mb-4">
+                                    <div class="card-header bg-dark text-white">
+                                        Japanese <i class="fa-solid fa-arrow-right-long mx-2"
+                                            style="vertical-align: middle;"></i> English
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="textToCopy"
+                                                style="height: 100px"></textarea>
+                                            <label for="textToCopy">Translate</label>
+                                        </div>
+                                        <div class="row g-1 justify-content-between mt-2">
+                                            <button type="button" onclick="copyTextToClipboard()"
+                                                class="btn btn-primary rounded col-lg-auto col-sm-12"
+                                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Copy to Clipboard">Copy</button>
+                                            <a href="https://www.google.com/search?q=%D8%AA%D8%B1%D8%AC%D9%85%D9%87&oq=%D8%AA&aqs=chrome.1.69i57j0i3l2j46i131i199i433i465i512j0i433i512j69i61l3.2816j0j7&sourceid=chrome&ie=UTF-8"
+                                                class="btn btn-dark rounded col-lg-auto col-sm-12" target="_blank">Use
+                                                google translation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="card-body position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="form-floating col-lg-5 col-sm-12">
+                                                <textarea class="form-control" id="textToCopy"
+                                                    style="height: 100px"></textarea>
+                                                <label class="ms-2" for="textToCopy">Enter Text</label>
+                                            </div>
+                                            <div
+                                                class="fa-solid fa-arrow-right-arrow-left text-secondary col-lg-2 py-2">
+                                            </div>
+                                            <div class="form-floating col-lg-5 col-sm-12">
+                                                <textarea class="form-control" id="textToCopy"
+                                                    style="height: 100px"></textarea>
+                                                <label class="ms-2" for="textToCopy">Translation</label>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute top-50 start-50 translate-middle z-3 text-dark">
+                                            <h5>Coming Soon</h5>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 start-0 bottom-0 end-0 z-2 bg-secondary bg-opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card text-center mb-4">
+                                    <div class="card-header bg-dark text-white">
+                                        Spanish <i class="fa-solid fa-arrow-right-long mx-2"
+                                            style="vertical-align: middle;"></i> English
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="textToCopy"
+                                                style="height: 100px"></textarea>
+                                            <label for="textToCopy">Translate</label>
+                                        </div>
+                                        <div class="row g-1 justify-content-between mt-2">
+                                            <button type="button" onclick="copyTextToClipboard()"
+                                                class="btn btn-primary rounded col-lg-auto col-sm-12"
+                                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Copy to Clipboard">Copy</button>
+                                            <a href="https://www.google.com/search?q=%D8%AA%D8%B1%D8%AC%D9%85%D9%87&oq=%D8%AA&aqs=chrome.1.69i57j0i3l2j46i131i199i433i465i512j0i433i512j69i61l3.2816j0j7&sourceid=chrome&ie=UTF-8"
+                                                class="btn btn-dark rounded col-lg-auto col-sm-12" target="_blank">Use
+                                                google translation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="card-body position-relative">
+                                        <div class="row align-items-center">
+                                            <div class="form-floating col-lg-5 col-sm-12">
+                                                <textarea class="form-control" id="textToCopy"
+                                                    style="height: 100px"></textarea>
+                                                <label class="ms-2" for="textToCopy">Enter Text</label>
+                                            </div>
+                                            <div
+                                                class="fa-solid fa-arrow-right-arrow-left text-secondary col-lg-2 py-2">
+                                            </div>
+                                            <div class="form-floating col-lg-5 col-sm-12">
+                                                <textarea class="form-control" id="textToCopy"
+                                                    style="height: 100px"></textarea>
+                                                <label class="ms-2" for="textToCopy">Translation</label>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute top-50 start-50 translate-middle z-3 text-dark">
+                                            <h5>Coming Soon</h5>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="position-absolute top-0 start-0 bottom-0 end-0 z-2 bg-secondary bg-opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- --------------------------------------- FAQs --------------------------------------- -->
         <section class="container-xxl py-5">
             <div class="container">
@@ -889,9 +1122,9 @@
                 </div>
             </div>
         </section>
-
     </div> <!-- container-xxl -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

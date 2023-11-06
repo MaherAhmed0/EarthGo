@@ -290,6 +290,7 @@ header .navbar-brand::after {
 .text-content {
     padding: 35px;
 }
+
 .experience-item img {
     transition: .4s;
 }
@@ -354,6 +355,18 @@ header .navbar-brand::after {
 .experience-item:hover .image-content-l img,
 .experience-item:hover .image-content-r img {
     transform: scale(1.15);
+}
+
+/* ------------------------- Translation ------------------------- */
+
+.carousel-content {
+    padding: 0 2.5rem;
+}
+
+@media (max-width: 500px) {
+    .carousel-content {
+        padding: 1.5rem;
+    }
 }
 
 /* ------------------------- FAQs ------------------------- */
