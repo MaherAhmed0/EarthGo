@@ -357,6 +357,35 @@ header .navbar-brand::after {
     transform: scale(1.15);
 }
 
+/* ------------------------- Upcoming Events ------------------------- */
+
+.event-card {
+    transition: .4s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.event-card:hover {
+    transform: scale(0.93);
+}
+
+.hp {
+    max-height: 580px;
+    transition: .4s;
+}
+
+.event-card:hover .hp {
+    transform: scale(1.15);
+}
+
+.custom-overlay {
+    background: linear-gradient(rgba(20, 24, 62, 0), rgb(20 24 62));
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* ------------------------- Translation ------------------------- */
 
 .carousel-content {
