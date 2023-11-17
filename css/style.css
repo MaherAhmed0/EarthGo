@@ -357,6 +357,30 @@ header .navbar-brand::after {
     transform: scale(1.15);
 }
 
+@media (max-width: 767px) {
+    .btns-g {
+        flex-wrap: wrap;
+    }
+
+    .b-1 {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .b-2 {
+        width: 49%;
+        margin-right: 0 !important;
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+
+    .b-3 {
+        width: 49%;
+        margin-right: 0 !important;
+        margin-left: auto;
+    }
+}
+
 /* ------------------------- Upcoming Events ------------------------- */
 
 .event-card {
@@ -370,7 +394,7 @@ header .navbar-brand::after {
 }
 
 .hp {
-    max-height: 580px;
+    max-height: 550px;
     transition: .4s;
 }
 
@@ -414,6 +438,46 @@ header .navbar-brand::after {
     .carousel-content {
         padding: 1.5rem;
     }
+}
+
+/* ------------------------- Team ------------------------- */
+
+.team-item {
+    position: relative;
+    border-top: 30px solid var(--dark);
+    background-color: rgba(0, 0, 0, 0.035);
+}
+
+.team-item::before {
+    content: "";
+    position: absolute;
+    top: -101px;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background: var(--dark);
+    clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
+    opacity: 1;
+}
+
+.team-item figure {
+    width: 80%;
+    border: 8px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.team-item figure img {
+    width: 100%;
+    background-color: white;
+    border: 10px solid var(--dark);
+    border-radius: 50%;
+    position: relative;
+    transition: .4s;
+}
+
+.team-item:hover figure img {
+    transform: scale(1.04);
 }
 
 /* ------------------------- FAQs ------------------------- */
