@@ -13,5 +13,3 @@ function copyTextToClipboard() {
         placement: "right"
     }).show();
 }
-
-

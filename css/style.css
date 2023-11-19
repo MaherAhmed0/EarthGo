@@ -12,6 +12,7 @@
 body {
     background-color: #F1F8FF;
     font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -286,6 +287,25 @@ header .navbar-brand::after {
     color: #FFFFFF !important;
 }
 
+/* ------------------------- CTA ------------------------- */
+.cta-banner {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
 /* ------------------------- Cultural Experiences ------------------------- */
 .text-content {
     padding: 35px;
@@ -557,4 +577,80 @@ header .navbar-brand::after {
 
 .footer .copyright a {
     color: var(--primary);
+}
+
+/* ------------------------- Icons ------------------------- */
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    z-index: 100;
+}
+
+.icon-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--primary);
+    margin: 4px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon-b i {
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.icon-b:hover i {
+    transform: scale(1.1);
+}
+
+.icon-b::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: var(--dark);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.icon-b:hover::before {
+    animation: flash 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes flash {
+    0% {
+        left: -100%;
+        top: 90%;
+    }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        left: -10%;
+        top: -10%;
+    }
+}
+
+@media (max-width: 700px) {
+    .icons {
+        display: none;
+    }
 }
